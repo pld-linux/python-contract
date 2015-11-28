@@ -25,13 +25,11 @@ the contracts while debugging.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-python setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_postclean
 
