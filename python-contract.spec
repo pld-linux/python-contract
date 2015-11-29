@@ -9,6 +9,7 @@ Group:		Development/Languages/Python
 Source0:	http://www.wayforward.net/pycontract/%{module}-%{version}.tar.gz
 # Source0-md5:	eaf94dc5c52e68ae5c99863ee74a36ec
 URL:		http://www.wayforward.net/pycontract/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 #%pyrequires_eq  python-libs
